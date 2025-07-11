@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('First Stage') {
             steps {
-                gitCheckout('', 'main')
+                gitCheckout('https://github.com/BBrucelee2002/argocd-testing.git', 'main')
             }
         }
         stage('Second Stage') {
