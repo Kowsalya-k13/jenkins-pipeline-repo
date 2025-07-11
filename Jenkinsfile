@@ -11,12 +11,12 @@ pipeline {
         }
         stage('Second Stage') {
             steps {
-                buildApp('mvn clean package')
+                buildApp()
             }
         }
         stage('Third Stage') {
             steps {
-                deployApp('./scripts/deploy.sh')
+                deployApp()
             }
         }
     }
